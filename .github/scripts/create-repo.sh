@@ -57,6 +57,6 @@ for APK in ${APKS[@]}; do
 done | jq -sr '[.[]]' > index.json
 
 # Alternate minified copy
-jq -c 'map(del(.hasReadme, .hasChangelog, .sources.[]["versionId", "hasCloudflare"]))' < index.json > index.min.json
+jq -c 'map(del(.hasReadme, .hasChangelog, .sources.[].versionId, .sources.[].hasCloudflare))' < index.json > index.min.json
 
 cat index.json
