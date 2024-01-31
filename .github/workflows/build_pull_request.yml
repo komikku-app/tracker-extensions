@@ -24,8 +24,10 @@ jobs:
           java-version: 17
           distribution: temurin
 
-      - name: Build extensions
-        uses: gradle/actions/setup-gradle@b6816cf21e7970b88479bb3c57d9cbe5cdd4b949 # v3.0.0-rc.1
+      - name: Set up Gradle
+        uses: gradle/actions/setup-gradle@ec92e829475ac0c2315ea8f9eced72db85bb337a # v3
         with:
-          arguments: assembleDebug
           cache-read-only: true
+
+      - name: Build extensions
+        run: ./gradlew assembleDebug
