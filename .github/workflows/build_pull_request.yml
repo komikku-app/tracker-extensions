@@ -32,4 +32,4 @@ jobs:
           cache-read-only: true
 
       - name: Build extensions
-        run: ./gradlew assembleDebug
+        run: ./gradlew -p src assembleDebug

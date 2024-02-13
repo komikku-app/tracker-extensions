@@ -24,9 +24,7 @@ if (System.getenv("CI") == null) {
 fun loadAllIndividualExtensions() {
     File(rootDir, "src").eachDir { dir ->
         dir.eachDir { subdir ->
-            val name = ":extensions:individual:${dir.name}:${subdir.name}"
-            include(name)
-            project(name).projectDir = File("src/${dir.name}/${subdir.name}")
+            include("src:${dir.name}:${subdir.name}")
         }
     }
 }
@@ -34,6 +32,18 @@ fun loadIndividualExtension(lang: String, name: String) {
     val projectName = ":extensions:individual:$lang:$name"
     include(projectName)
     project(projectName).projectDir = File("src/${lang}/${name}")
+}
+
+fun File.getChunk(chunk: Int, chunkSize: Int): List<File>? {
+    return listFiles()
+        // Lang folder
+        ?.filter { it.isDirectory }
+        // Extension subfolders
+        ?.mapNotNull { dir -> dir.listFiles()?.filter { it.isDirectory } }
+        ?.flatten()
+        ?.sortedBy { it.name }
+        ?.chunked(chunkSize)
+        ?.get(chunk)
 }
 
 fun File.eachDir(block: (File) -> Unit) {
