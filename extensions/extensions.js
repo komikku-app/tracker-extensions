@@ -32,7 +32,7 @@
     }
 
     document.addEventListener("alpine:init", () => {
-        Alpine.store("repoUrl", "https://raw.githubusercontent.com/komikku-app/extensions/repo");
+        Alpine.store("repoUrl", "https://raw.githubusercontent.com/komikku-repo/extensions/repo");
 
         Alpine.data("extensionList", () => ({
             LoadingStatus,
