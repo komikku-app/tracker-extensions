@@ -9,6 +9,8 @@ This repository contains the available extension catalogues for the [Tachiyomi](
 
 # Usage
 
+[Click to add Repo to app](https://intradeus.github.io/http-protocol-redirector/?r=tachiyomi://add-repo?url=https://raw.githubusercontent.com/komikku-app/tracker-extensions/repo/index.min.json)
+
 Extension sources can be downloaded, installed, and uninstalled via the main Tachiyomi app. They are installed and uninstalled like regular apps, in `.apk` format.
 
 ## Downloads
