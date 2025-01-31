@@ -10,7 +10,7 @@ body:
       description: |
         You can find the extension name and version in **Browse → Extensions**.
       placeholder: |
-        Example: "NotRealScans 1.3.1"
+        Example: "Komga 1.3.18"
     validations:
       required: true
 
@@ -28,7 +28,7 @@ body:
     attributes:
       label: Source new URL
       placeholder: |
-        Example: "https://notrealscans.org"
+        Example: "https://tachiyomidesk.org"
     validations:
       required: true
 
