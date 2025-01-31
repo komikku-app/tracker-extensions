@@ -26,8 +26,8 @@ jobs:
       - name: Set up JDK
         uses: actions/setup-java@v4
         with:
-          java-version: 11
-          distribution: adopt
+          java-version: 17
+          distribution: temurin
 
       - name: Prepare signing key
         run: |
@@ -69,7 +69,7 @@ jobs:
         uses: actions/setup-java@v4
         with:
           java-version: 17
-          distribution: adopt
+          distribution: temurin
 
       - name: Checkout main branch
         uses: actions/checkout@v4
