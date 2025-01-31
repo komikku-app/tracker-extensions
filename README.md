@@ -3,9 +3,9 @@
 | [![Build](https://github.com/komikku-app/tracker-extensions/actions/workflows/build_push.yml/badge.svg)](https://github.com/komikku-app/tracker-extensions/actions/workflows/build_push.yml) | [![Discord](https://img.shields.io/discord/1242381704459452488?label=discord&labelColor=7289da&color=2c2f33&style=flat)](https://discord.gg/85jB7V5AJR) |
 
 # ![app icon](./.github/readme-images/app-icon.png)Tachiyomi Extensions
-Tachiyomi is a free and open source manga reader for Android 6.0 and above.
+Tachiyomi / Mihon / Komikku is a free and open source manga reader for Android 6.0 and above.
 
-This repository contains the available extension catalogues for the [Tachiyomi](https://github.com/tachiyomiorg/tachiyomi) app.
+This repository contains the available extension catalogues for the [Tachiyomi](https://github.com/tachiyomiorg/tachiyomi) & forks.
 
 # Usage
 
@@ -13,11 +13,11 @@ Extension sources can be downloaded, installed, and uninstalled via the main Tac
 
 ## Downloads
 
-If you prefer to directly download the APK files, they are available via https://tachiyomi.org/extensions/ or directly in this GitHub repository in the [`repo` branch](https://github.com/tachiyomiorg/extensions/tree/repo/apk).
+If you prefer to directly download the APK files, they are available via https://komikku-app.github.io/tracker-extensions/ or directly in this GitHub repository in the [`repo` branch](https://github.com/komikku-app/tracker-extensions/tree/repo/apk).
 
 # Requests
 
-To request a new source or bug fix, [create an issue](https://github.com/tachiyomiorg/extensions/issues/new/choose).
+To request a new source or bug fix, [create an issue](https://github.com/komikku-app/tracker-extensions/issues/new/choose).
 
 Note that requesting something does not imply that something will be added or fixed in a timely fashion or at all since the work is volunteer-based. Furthermore, some sources may be impossible to do or prohibitively difficult to maintain.
 
@@ -27,7 +27,7 @@ If you would like to see a request fulfilled and have the necessary skills to do
 
 Contributions are welcome!
 
-Check out the repo's [issue backlog](https://github.com/tachiyomiorg/extensions/issues) for source requests and bug reports.
+Check out the repo's [issue backlog](https://github.com/komikku-app/tracker-extensions/issues) for source requests and bug reports.
 
 To get started with development, see [CONTRIBUTING.md](./CONTRIBUTING.md).
 
